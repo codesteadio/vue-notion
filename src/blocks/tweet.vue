@@ -8,7 +8,9 @@ export default {
     extends: Blockable,
     name: 'NotionTweet',
     data: () => ({
-        tweet: null
+        tweet: {
+            html: ''
+        }
     }),
     async fetch() {
          if(this.properties.source&&this.properties.source[0]){

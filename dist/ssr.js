@@ -655,7 +655,9 @@ var __vue_component__$2 = /*#__PURE__*/normalizeComponent({
   name: 'NotionTweet',
   data: function data() {
     return {
-      tweet: null
+      tweet: {
+        html: ''
+      }
     };
   },
   fetch: function (_fetch) {
@@ -728,7 +730,7 @@ var __vue_inject_styles__$3 = undefined;
 var __vue_scope_id__$3 = undefined;
 /* module identifier */
 
-var __vue_module_identifier__$3 = "data-v-a0ad0498";
+var __vue_module_identifier__$3 = "data-v-1cc71c80";
 /* functional template */
 
 var __vue_is_functional_template__$3 = false;

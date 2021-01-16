@@ -576,7 +576,9 @@ var script$3 = {
   extends: Blockable,
   name: 'NotionTweet',
   data: () => ({
-    tweet: null
+    tweet: {
+      html: ''
+    }
   }),
 
   async fetch() {
