@@ -7,6 +7,7 @@
     v-bind="pass"
   />
   <NotionBookmark v-else-if="isType('bookmark')" v-bind="pass" />
+  <NotionTweet v-else-if="isType('tweet')" v-bind="pass" />
   <NotionCallout v-else-if="isType('callout')" v-bind="pass" />
   <NotionCode v-else-if="isType('code')" v-bind="pass" />
   <NotionText v-else-if="isType('text')" v-bind="pass" />
@@ -39,6 +40,7 @@
 <script>
 import Blockable, { blockComputed } from "@/lib/blockable";
 import NotionBookmark from "@/blocks/bookmark";
+import NotionTweet from "@/blocks/tweet";
 import NotionCallout from "@/blocks/callout";
 import NotionCode from "@/blocks/code";
 import NotionColumn from "@/blocks/column";
@@ -55,6 +57,7 @@ export default {
   name: "NotionBlock",
   components: {
     NotionBookmark,
+    NotionTweet,
     NotionCallout,
     NotionCode,
     NotionColumn,
