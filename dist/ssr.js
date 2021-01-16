@@ -680,22 +680,27 @@ var __vue_component__$2 = /*#__PURE__*/normalizeComponent({
           switch (_context.prev = _context.next) {
             case 0:
               if (!(_this.properties.source && _this.properties.source[0])) {
-                _context.next = 7;
+                _context.next = 8;
                 break;
               }
 
-              _context.next = 3;
+              if (process.client) {
+                _context.next = 8;
+                break;
+              }
+
+              _context.next = 4;
               return fetch("https://publish.twitter.com/oembed?url=".concat(_this.properties.source[0]));
 
-            case 3:
+            case 4:
               resp = _context.sent;
-              _context.next = 6;
+              _context.next = 7;
               return resp.json();
 
-            case 6:
+            case 7:
               _this.tweet = _context.sent;
 
-            case 7:
+            case 8:
             case "end":
               return _context.stop();
           }
@@ -730,7 +735,7 @@ var __vue_inject_styles__$3 = undefined;
 var __vue_scope_id__$3 = undefined;
 /* module identifier */
 
-var __vue_module_identifier__$3 = "data-v-1cc71c80";
+var __vue_module_identifier__$3 = "data-v-c761b2ea";
 /* functional template */
 
 var __vue_is_functional_template__$3 = false;

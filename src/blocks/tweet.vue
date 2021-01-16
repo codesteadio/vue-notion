@@ -14,8 +14,10 @@ export default {
     }),
     async fetch() {
          if(this.properties.source&&this.properties.source[0]){
-            const resp = await fetch(`https://publish.twitter.com/oembed?url=${this.properties.source[0]}`)
-            this.tweet = await resp.json()
+             if (!process.client) {
+                const resp = await fetch(`https://publish.twitter.com/oembed?url=${this.properties.source[0]}`)
+                this.tweet = await resp.json()
+             }
          }
     }
 }
