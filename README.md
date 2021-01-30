@@ -61,7 +61,11 @@ npm install vue-notion
 
 ### NuxtJS Module
 
-Install as shown above and add `"vue-notion/nuxt"` to the `buildModules` array in `nuxt.config.js`.
+Install as a dev-dependency and add `"vue-notion/nuxt"` to the `buildModules` array in `nuxt.config.js`.
+
+```bash
+npm install vue-notion --save-dev
+```
 
 ```js
 // nuxt.config.js
@@ -154,7 +158,8 @@ export default {
 
 List of pages that are using this library.
 
-- [StorePreviewer](https://www.storepreviewer.com)
+- [StorePreviewer](https://www.storepreviewer.com) — Preview and optimize your app store presence
+- [Dominik Sobe's Personal Site](https://dominiksobe.com/)
 - _...if you're using `vue-notion`, we'd be happy to feature you here_
 
 ## Supported Blocks
