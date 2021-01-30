@@ -685,7 +685,7 @@ var __vue_component__$2 = /*#__PURE__*/normalizeComponent({
               }
 
               _context.next = 3;
-              return fetch("https://publish.twitter.com/oembed?url=".concat(_this.properties.source[0]));
+              return fetch("https://codestead.io/api/twitter/oembed?url=".concat(_this.properties.source[0]));
 
             case 3:
               resp = _context.sent;
@@ -734,7 +734,7 @@ var __vue_inject_styles__$3 = undefined;
 var __vue_scope_id__$3 = undefined;
 /* module identifier */
 
-var __vue_module_identifier__$3 = "data-v-78d79230";
+var __vue_module_identifier__$3 = "data-v-ac7cbb9c";
 /* functional template */
 
 var __vue_is_functional_template__$3 = false;

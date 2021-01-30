@@ -14,7 +14,7 @@ export default {
     }),
     async fetch() {
          if(this.properties.source&&this.properties.source[0]){
-            const resp = await fetch(`https://publish.twitter.com/oembed?url=${this.properties.source[0]}`)
+            const resp = await fetch(`https://codestead.io/api/twitter/oembed?url=${this.properties.source[0]}`)
             const data = await resp.json()
             if(data){
                 this.tweet = data
