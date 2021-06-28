@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import Blockable, { blockComputed } from "@/lib/blockable";
+import Blockable from "@/lib/blockable";
 import NotionBookmark from "@/blocks/bookmark";
 import NotionTweet from "@/blocks/tweet";
 import NotionCallout from "@/blocks/callout";
